@@ -5,6 +5,21 @@
 
 #include "../src/hello.hpp"
 
-TEST_CASE( "it returns Hello World" ) {
-    REQUIRE( hello() == "Hello World!" );
+TEST_CASE( "First string is equal to second string" ) {
+    REQUIRE( strcmp_case_insensitive("raCIng","raCIng") == 0 );
+    REQUIRE( strcmp_case_insensitive("Wordle","Wordle") == 0 );
+    REQUIRE( strcmp_case_insensitive("number","number") == 0 );
+}
+
+
+TEST_CASE( "First string is equal to second string" ) {
+    REQUIRE( strcmp_case_insensitive("raCIng","raCIng") == 0 );
+    REQUIRE( strcmp_case_insensitive("Wordle","Wordle") == 0 );
+    REQUIRE( strcmp_case_insensitive("number","number") == 0 );
+}
+
+TEST_CASE( "First string is equal to second string" ) {
+    REQUIRE( strcmp_case_insensitive("raCIng","raCIng") == 0 );
+    REQUIRE( strcmp_case_insensitive("Wordle","Wordle") == 0 );
+    REQUIRE( strcmp_case_insensitive("number","number") == 0 );
 }
